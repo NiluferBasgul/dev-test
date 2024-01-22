@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Title
+  labels:
+    app: Title
+spec:
+  containers:
+    - name: micro-core
+      image: 08c7dfcd841d4a22ba41faa727c3ed414916e516032052963df0e1fbf8f098fd
+      imagePullPolicy: IfNotPresent
+  restartPolicy: Always
+  
